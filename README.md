@@ -1,5 +1,5 @@
 
-# How to Kill Crypto Money
+# How to Kill/Manipulate Crypto Money
 ###### now public for all 😄
 
 ## Introduction
