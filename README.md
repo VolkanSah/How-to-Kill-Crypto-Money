@@ -255,6 +255,14 @@ else:
     print("The seed phrase is invalid. Please provide a valid seed phrase.")
 ```
 
+## Issues
+Issues for this script are not accepted as it is intended for educational purposes only and not for production use. However, you are welcome to make a Pull Request (PR) for contributions.
+
+> [!WARNING]
+> Exploiting security vulnerabilities without permission and manipulating or destroying cryptocurrency wallets is illegal and unethical, and may result in criminal charges.
+
+
+
 ## Your Support
 If you find this project useful and want to support it, there are several ways to do so:
 
