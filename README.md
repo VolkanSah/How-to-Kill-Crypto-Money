@@ -1,6 +1,8 @@
 
-# How to Kill/Manipulate Crypto Money
+# How to Kill Crypto Money/Wallet
 ###### now public for all 😄
+
+
 
 ## Introduction
 This document demonstrates how to use Python and the mnemonic library to generate a seed phrase and derive a private key. This code is intended for demonstration purposes only and should never be used with real funds or your actual hardware wallet.
@@ -10,8 +12,11 @@ This document demonstrates how to use Python and the mnemonic library to generat
 - [Security Risks and Vulnerabilities](#security-risks-and-vulnerabilities)
 - [Generating a Seed Phrase](#generating-a-seed-phrase)
 - [Deriving a Private Key](#deriving-a-private-key)
+- [Generating Addresses from Seed Phrases](#generating-addresses-from-seed-phrases)
 - [Signing Transactions](#signing-transactions)
 - [Reading and Validating Seed Phrases](#reading-and-validating-seed-phrases)
+- [Using Hardware Wallets](#using-hardware-wallets)
+- [Detecting and Preventing Seed Phrase Leaks](#detecting-and-preventing-seed-phrase-leaks)
 - [Important Warnings](#important-warnings)
 - [Examples](#examples)
 - [Credits](#credits)
@@ -48,6 +53,31 @@ print("Private Key:", private_key)
 ```
 
 This code converts the seed phrase into a private key. The `binascii.hexlify()` function transforms the byte sequence of the private key into a hexadecimal string.
+
+## Generating Addresses from Seed Phrases
+You can derive public addresses from a seed phrase, which are used in blockchain transactions.
+
+```python
+from mnemonic import Mnemonic
+import bip32utils
+
+# Generate a seed phrase
+mnemo = Mnemonic('english')
+seed = mnemo.generate(strength=128)
+print("Seed Phrase:", seed)
+
+# Convert the seed phrase to a seed
+seed_bytes = mnemo.to_seed(seed)
+
+# Create a BIP32 root key from the seed
+root_key = bip32utils.BIP32Key.fromEntropy(seed_bytes)
+
+# Generate a Bitcoin address
+address = root_key.Address()
+print("Bitcoin Address:", address)
+```
+
+This code generates a Bitcoin address from a seed phrase using BIP32.
 
 ## Signing Transactions
 The private key can be used to sign transactions. Note that this is just a demonstration and should not be used with real funds.
@@ -107,6 +137,36 @@ else:
 ```
 
 This example shows how to validate a given seed phrase and convert it into a private key if it is valid.
+
+## Using Hardware Wallets
+Integrating mnemonic libraries with hardware wallets adds an extra layer of security.
+
+```markdown
+# This is a placeholder for actual hardware wallet integration code
+# Example:
+# from hardware_wallet_library import HardwareWallet
+# wallet = HardwareWallet()
+# wallet.load_seed(seed)
+# address = wallet.get_address()
+# print("Hardware Wallet Address:", address)
+```
+
+## Detecting and Preventing Seed Phrase Leaks
+Scripts to detect common patterns of seed phrase leaks and how to prevent them.
+
+```python
+# Example of a simple script to check for seed phrase leaks in a file
+def check_for_seed_phrases(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+        if "abandon abandon abandon" in content:
+            print("Potential seed phrase leak detected!")
+        else:
+            print("No seed phrase leaks detected.")
+
+# Check a sample file for leaks
+check_for_seed_phrases('sample_file.txt')
+```
 
 ## Important Warnings
 - **Secure Your Seed Phrase**: Store your seed phrase in a secure location, as it is the only way to access your cryptocurrency.
