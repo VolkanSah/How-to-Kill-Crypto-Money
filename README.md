@@ -22,7 +22,7 @@ This document demonstrates how to use Python and the mnemonic library to generat
 - [Detecting and Preventing Seed Phrase Leaks](#detecting-and-preventing-seed-phrase-leaks)
 - [Important Warnings](#important-warnings)
 - [Examples](#examples)
-- [Credits](#credits)
+- [Your Support](#your-support)
 
 ## Security Risks and Vulnerabilities
 Working with mnemonic libraries and private keys involves significant security risks. Improper handling of seed phrases and private keys can lead to the loss of funds. Always ensure you are following best practices for security:
