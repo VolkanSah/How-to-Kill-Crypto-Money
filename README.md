@@ -1,5 +1,5 @@
 # How to Kill Crypto Money/Wallet
-##### Now Public for All 😄
+###### (Updated 06.07.2024) ./. Now Public for All 😄
 ![killwallet](killwallet.jpg)
 
 ## Introduction
