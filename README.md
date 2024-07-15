@@ -1,4 +1,4 @@
-# How to Kill Crypto Money/Wallet
+# Kill Crypto Money/Wallet? or how to work with **mnemonic library**
 ###### (Updated 06.07.2024) ./. Now Public for All 😄
 ![killwallet](killwallet.jpg)
 
