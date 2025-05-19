@@ -2,11 +2,6 @@
 ### or how to (not) work with the mnemonic library
 
     A love story between developers and irreversible mistakes.
-    
-![killwallet](killwallet.jpg)
-
-## Introduction
-This document demonstrates how to use Python and the mnemonic library to generate a seed phrase and derive a private key. The name of this repository, "How to Kill Crypto Money/Wallet," is intentionally ironic. While the techniques described herein can indeed be used to manipulate and even destroy wallets/crypto assets, the primary purpose of this repository is to educate and practice security measures. It's important to note that although these tools can be repurposed by malicious actors, this repository is intended strictly for educational and security testing purposes. I explicitly distance ourselves from any misuse of the knowledge and tools provided here.
 
 
 > [!WARNING]
@@ -14,6 +9,13 @@ This document demonstrates how to use Python and the mnemonic library to generat
 > This repository is not for the faint-hearted. It's meant for educational and absolutely paranoid testing purposes only.
 > If you're using real seed phrases (mnemonics) or connect to a live wallet with real funds, you're on your own.
 > Mistakes will happen. Mistakes will kill your coins. Welcome to the crypto jungle.
+    
+![killwallet](killwallet.jpg)
+
+## Introduction
+This document demonstrates how to use Python and the mnemonic library to generate a seed phrase and derive a private key. The name of this repository, "How to Kill Crypto Money/Wallet," is intentionally ironic. While the techniques described herein can indeed be used to manipulate and even destroy wallets/crypto assets, the primary purpose of this repository is to educate and practice security measures. It's important to note that although these tools can be repurposed by malicious actors, this repository is intended strictly for educational and security testing purposes. I explicitly distance ourselves from any misuse of the knowledge and tools provided here.
+
+
 
 
 ### 🙃 Why the Name?
