@@ -53,6 +53,8 @@ Because if you mess up the mnemonic logic, you might just...
 const phrase = "abandon abandon abandon ..."; // 🚩
 const seed = bip39.mnemonicToSeedSync(phrase);
 const key = deriveKey(seed); // wrong path? wrong format? sayonara coins.
+// At this point, you've probably destroyed 3 hours of effort and 3 years of savings.
+
 ```
 ## ✅ Best Practices (aka: Anti-Kill List)
 - Always work with testnets.
@@ -198,7 +200,7 @@ def check_for_seed_phrases(file_path):
         if "abandon abandon abandon" in content:
             print("Potential seed phrase leak detected!")
         else:
-            print("No seed phrase leaks detected.")
+            print("No seed phrase leaks detected. Yet.")
 
 # Check a sample file for leaks
 check_for_seed_phrases('sample_file.txt')
@@ -235,6 +237,7 @@ print("Private Key:", private_key)
 ```
 
 ### Example 3: Signing a Transaction (Hypothetical)
+... but hauntingly real!?
 ```python
 import mnemonic
 import binascii
@@ -287,6 +290,8 @@ if is_valid:
 else:
     print("The seed phrase is invalid. Please provide a valid seed phrase.")
 ```
+
+
 
 ## Issues
 Issues for this script are not accepted as it is intended for educational purposes only and not for production use. However, you are welcome to make a Pull Request (PR) for contributions.
