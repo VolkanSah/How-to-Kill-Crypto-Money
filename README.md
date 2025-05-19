@@ -32,7 +32,7 @@ Because if you mess up the mnemonic logic, you might just...
 
 **This repo is ironically serious. The title says "Kill" because every undefined, every wrong derivation path, every accidentally published .env file could be the end.**
 
-## 🧠 What’s in Here?
+### 🧠 What’s in Here?
 - How to use @scure/bip39 (or bip39, depending on flavor)
 - How to generate and validate mnemonics
 - How to derive keys and addresses
@@ -54,7 +54,7 @@ Because if you mess up the mnemonic logic, you might just...
 - [Your Support](#your-support)
 
 
-## 📜 Example: How to Lose Coins in 3 Lines and less than a second?
+### 📜 Example: How to Lose Coins in 3 Lines and less than a second?
 ```
 const phrase = "abandon abandon abandon ..."; // 🚩
 const seed = bip39.mnemonicToSeedSync(phrase);
@@ -62,7 +62,7 @@ const key = deriveKey(seed); // wrong path? wrong format? sayonara coins.
 // At this point, you've probably destroyed 3 hours of effort and 3 years of savings.
 
 ```
-## ✅ Best Practices (aka: Anti-Kill List)
+### ✅ Best Practices (aka: Anti-Kill List)
 - Always work with testnets.
 - Never use real mnemonics unless you're sure.
 - Avoid cloud syncing any files with keys.
