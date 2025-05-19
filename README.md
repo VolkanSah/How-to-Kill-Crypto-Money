@@ -1,5 +1,8 @@
-# Kill Crypto Money/Wallet? or how to work with **mnemonic library**
-###### (Updated 06.07.2024) ./. Now Public for All 😄
+# 🧨 Kill Crypto Money/Wallet?
+### or how to (not) work with the mnemonic library
+
+    A love story between developers and irreversible mistakes.
+    
 ![killwallet](killwallet.jpg)
 
 ## Introduction
@@ -7,8 +10,28 @@ This document demonstrates how to use Python and the mnemonic library to generat
 
 
 > [!WARNING]
-> This codes are intended for demonstration purposes only and should never be used with real funds or your actual hardware wallet.
+> ⚠️ This Repo Can Destroy Your Wallet!
+> This repository is not for the faint-hearted. It's meant for educational and absolutely paranoid testing purposes only.
+> If you're using real seed phrases (mnemonics) or connect to a live wallet with real funds, you're on your own.
+> Mistakes will happen. Mistakes will kill your coins. Welcome to the crypto jungle.
 
+
+### 🙃 Why the Name?
+
+Because if you mess up the mnemonic logic, you might just...
+-🚽 Flush your tokens
+-🔫 Shoot your future self
+-☠️ Kill your wallet (no respawn)
+-💸 Say goodbye to your ETH, BTC, or 3rd-world token dreams
+
+**This repo is ironically serious. The title says "Kill" because every undefined, every wrong derivation path, every accidentally published .env file could be the end.**
+
+## 🧠 What’s in Here?
+- How to use @scure/bip39 (or bip39, depending on flavor)
+- How to generate and validate mnemonics
+- How to derive keys and addresses
+- How to simulate wallet creation safely
+- Bonus: How to simulate destruction of a wallet so you learn without crying
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -24,12 +47,22 @@ This document demonstrates how to use Python and the mnemonic library to generat
 - [Examples](#examples)
 - [Your Support](#your-support)
 
-## Security Risks and Vulnerabilities
-Working with mnemonic libraries and private keys involves significant security risks. Improper handling of seed phrases and private keys can lead to the loss of funds. Always ensure you are following best practices for security:
 
-- Store your seed phrase in a secure location.
-- Never share your private key with anyone.
-- Use secure, isolated environments when working with sensitive information.
+## 📜 Example: How to Lose Coins in 3 Lines and less than a second?
+```
+const phrase = "abandon abandon abandon ..."; // 🚩
+const seed = bip39.mnemonicToSeedSync(phrase);
+const key = deriveKey(seed); // wrong path? wrong format? sayonara coins.
+```
+## ✅ Best Practices (aka: Anti-Kill List)
+- Always work with testnets.
+- Never use real mnemonics unless you're sure.
+- Avoid cloud syncing any files with keys.
+-Add .env, .secret, .key to your .gitignore, then double check.
+- Use airgapped signing if you're paranoid (which you should be).
+
+---
+# Let us start:
 
 ## Generating a Seed Phrase
 The following Python code generates a seed phrase using the mnemonic library. This seed phrase can be used to derive a private key.
