@@ -19,16 +19,16 @@ This document demonstrates how to use Python and the mnemonic library to generat
 ### 🙃 Why the Name?
 
 Because if you mess up the mnemonic logic, you might just...
--🚽 Flush your tokens
--🔫 Shoot your future self
--☠️ Kill your wallet (no respawn)
--💸 Say goodbye to your ETH, BTC, or 3rd-world token dreams
+- 🚽 Flush your tokens
+- 🔫 Shoot your future self
+- ☠️ Kill your wallet (no respawn)
+- 💸 Say goodbye to your ETH, BTC, or 3rd-world token dreams
 
 **This repo is ironically serious. The title says "Kill" because every undefined, every wrong derivation path, every accidentally published .env file could be the end.**
 
 ## 🧠 What’s in Here?
 - How to use @scure/bip39 (or bip39, depending on flavor)
--  How to generate and validate mnemonics
+- How to generate and validate mnemonics
 - How to derive keys and addresses
 - How to simulate wallet creation safely
 - Bonus: How to simulate destruction of a wallet so you learn without crying
