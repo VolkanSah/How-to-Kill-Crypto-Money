@@ -17,7 +17,7 @@ Do you feel lucky, punk? (y/N)
 ![killwallet](killwallet.jpg)
 
 ## Introduction
-This document demonstrates how to use Python and the mnemonic library to generate a seed phrase and derive a private key. The name of this repository, "How to Kill Crypto Money/Wallet," is intentionally ironic. While the techniques described herein can indeed be used to manipulate and even destroy wallets/crypto assets, the primary purpose of this repository is to educate and practice security measures. It's important to note that although these tools can be repurposed by malicious actors, this repository is intended strictly for educational and security testing purposes. I explicitly distance ourselves from any misuse of the knowledge and tools provided here.
+This document demonstrates how to use Python and the mnemonic library to generate a seed phrase and derive a private key.  It's important to note that although these tools can be repurposed by malicious actors, this repository is intended strictly for educational and security testing purposes. I explicitly distance ourselves from any misuse of the knowledge and tools provided here.
 
 
 
