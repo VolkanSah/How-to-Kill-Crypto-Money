@@ -1,5 +1,5 @@
 # 🧨 Kill Crypto Money/Wallet?
-### or how to (not) work with the mnemonic library
+or how to (not) work with the mnemonic library!?
 
     A love story between developers and irreversible mistakes.
 ```
