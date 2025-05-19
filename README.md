@@ -312,5 +312,9 @@ If you find this project useful and want to support it, there are several ways t
 
 Thank you for your support! ❤️
 
-##### Copyright S. Volkan Kücükbudak
+## License
+
+MIT License – Use at your own risk.  
+If you fry your wallet while playing with this code or accidentally shut down a hacker – congrats or condolences, depending on your role. 😈🔐
+
 
