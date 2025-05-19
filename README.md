@@ -2,7 +2,11 @@
 ### or how to (not) work with the mnemonic library
 
     A love story between developers and irreversible mistakes.
-
+```
+WARNING: This script is not idiot-proof.
+Proceeding may result in irreversible loss of fake or real assets.
+Do you feel lucky, punk? (y/N)
+```
 
 > [!WARNING]
 > ⚠️ This Repo Can Destroy Your Wallet!
