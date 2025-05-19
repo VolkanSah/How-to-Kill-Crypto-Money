@@ -28,7 +28,7 @@ Because if you mess up the mnemonic logic, you might just...
 
 ## 🧠 What’s in Here?
 - How to use @scure/bip39 (or bip39, depending on flavor)
-- How to generate and validate mnemonics
+-  How to generate and validate mnemonics
 - How to derive keys and addresses
 - How to simulate wallet creation safely
 - Bonus: How to simulate destruction of a wallet so you learn without crying
