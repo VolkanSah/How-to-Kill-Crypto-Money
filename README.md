@@ -1,5 +1,6 @@
 # 🧨 Kill Crypto Money/Wallet?
 or how to (not) work with the mnemonic library!?
+![killwallet](killwallet.jpg)
 
     A love story between developers and irreversible mistakes.
 ```
@@ -14,7 +15,7 @@ Do you feel lucky, punk? (y/N)
 > If you're using real seed phrases (mnemonics) or connect to a live wallet with real funds, you're on your own.
 > Mistakes will happen. Mistakes will kill your coins. Welcome to the crypto jungle.
     
-![killwallet](killwallet.jpg)
+
 
 ## Introduction
 This document demonstrates how to use Python and the mnemonic library to generate a seed phrase and derive a private key.  It's important to note that although these tools can be repurposed by malicious actors, this repository is intended strictly for educational and security testing purposes. I explicitly distance ourselves from any misuse of the knowledge and tools provided here.
