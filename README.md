@@ -1,13 +1,14 @@
 # 🧨 Kill Crypto Money/Wallet?
-or how to (not) work with the mnemonic library!?
-![killwallet](killwallet.jpg)
-
-    A love story between developers and irreversible mistakes.
+... ... ... ... or how to (not) work with the mnemonic library!?
 ```
 SYSTEM WARNING: This script is not idiot-proof.
 Proceeding may result in irreversible loss of fake or real assets.
 Do you feel lucky, punk? (y/N)
 ```
+![killwallet](killwallet.jpg)
+
+    A love story between developers and irreversible mistakes.
+
 
 > [!WARNING]
 > ⚠️ This Repo Can Destroy Your Wallet!
