@@ -1,7 +1,7 @@
 # 🧨 Kill Crypto Money/Wallet?
 ... ... ... ... or how to (not) work with the mnemonic library!?
 ```
-SYSTEM WARNING: This script is not idiot-proof.
+SYSTEM WARNING: This repo is not idiot-proof.
 Proceeding may result in irreversible loss of fake or real assets.
 Do you feel lucky, punk? (y/N)
 ```
