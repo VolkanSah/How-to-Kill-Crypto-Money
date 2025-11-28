@@ -11,12 +11,7 @@ Do you feel lucky, punk? (y/N)
 
 
 > [!WARNING]
-> ⚠️ This Repo Can Destroy Your Wallet!
-> This repository is not for the faint-hearted. It's meant for educational and absolutely paranoid testing purposes only.
-> If you're using real seed phrases (mnemonics) or connect to a live wallet with real funds, you're on your own.
-> Mistakes will happen. Mistakes will kill your coins. Welcome to the crypto jungle.
-    
-
+> ⚠️ This Repo Can Destroy Your Wallet! This repository is not for the faint-hearted. It's meant for educational and absolutely paranoid security testing purposes only. The Lesson: In crypto, the biggest risk is often the developer's own logic. If you use real seed phrases (mnemonics) or connect to a live wallet with real funds, you are solely responsible for understanding the cryptographic principles demonstrated here. Mistakes will happen. Mistakes will kill your coins. Welcome to the crypto jungle.
 
 ## Introduction
 This document demonstrates how to use Python and the mnemonic library to generate a seed phrase and derive a private key.  It's important to note that although these tools can be repurposed by malicious actors, this repository is intended strictly for educational and security testing purposes. I explicitly distance ourselves from any misuse of the knowledge and tools provided here.
