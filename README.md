@@ -53,13 +53,17 @@ Because if you mess up the mnemonic and derivation logic, you might just...
 
 
 ### 📜 Example: How to Lose Coins in 3 Lines and less than a second?
-```
-const phrase = "abandon abandon abandon ..."; // 🚩
+
+
+```python
+const phrase = "abandon abandon abandon ..."; // 🚩 The 12/24 words
 const seed = bip39.mnemonicToSeedSync(phrase);
-const key = deriveKey(seed); // wrong path? wrong format? sayonara coins.
-// At this point, you've probably destroyed 3 hours of effort and 3 years of savings.
+// **CRITICAL:** Missing the Derivation Path here is the biggest mistake.
+const key = deriveKey(seed, "m/44'/0'/0'/0/0"); // 🚩 WRONG PATH? WRONG COIN INDEX? SAYONARA COINS.
+// At this point, a single character error in the path (e.g., '1' instead of '0') has likely destroyed 3 years of savings.
 
 ```
+
 ### ✅ Best Practices (aka: Anti-Kill List)
 - Always work with testnets.
 - Never use real mnemonics unless you're sure.
