@@ -20,15 +20,15 @@ This document demonstrates how to use Python and the mnemonic library to generat
 > [!NOTE]
 > ⚠️ If forked please visit orginal repo [source](https://github.com/VolkanSah/How-to-Kill-Crypto-Money/)
 
-### 🙃 Why the Name?
+### 🙃 Why the Name? (The Core Lesson)
 
-Because if you mess up the mnemonic logic, you might just...
-- 🚽 Flush your tokens
-- 🔫 Shoot your future self
-- ☠️ Kill your wallet (no respawn)
-- 💸 Say goodbye to your ETH, BTC, or 3rd-world token dreams
+Because if you mess up the mnemonic and derivation logic, you might just...
+- 🚽 **Flush your tokens:** By accidentally using a non-standard **Derivation Path** (e.g., changing from `m/44'/0'/0'/0/0` to `m/44'/1'/0'/0/0`).
+- 🔫 **Shoot your future self:** By using a faulty or non-standard **BIP39 implementation**.
+- ☠️ **Kill your wallet (no respawn):** By publishing a key file due to **missing `.gitignore` discipline**.
+- 💸 **Say goodbye:** By losing the **Passphrase** (Salt) component, rendering the seed useless.
 
-**This repo is ironically serious. The title says "Kill" because every undefined, every wrong derivation path, every accidentally published .env file could be the end.**
+**This repo is ironically serious.** The title says "Kill" because every undefined parameter, every wrong derivation path, and every accidentally published key could be the end. This is a **hands-on lesson in cryptographic self-defense.**
 
 ### 🧠 What’s in Here?
 - How to use @scure/bip39 (or bip39, depending on flavor)
